@@ -1,0 +1,150 @@
+* {box-sizing: border-box}
+
+html, body {
+  background-color: #282828;
+    margin: 0;
+    height:100%;
+    width:100%;
+    padding:0;
+  }
+
+  
+  section {
+    display: block;
+    background: #282828;
+    height:100%;
+    width:100%;
+    padding: 60px;
+    padding-left: 120px;
+    box-sizing:border-box;
+  }
+
+  h1{
+    font-size:26px;
+    text-align: left;
+    color: #ffffff;
+    font-family: Verdana, sans-serif;
+    margin-top: 0px;
+    padding-left: 400px;
+  }
+
+  h2{
+    font-size: 16px;
+    text-align: left;
+    color: #000000;
+    padding-top: 30px;
+        
+  }
+
+  h3{
+    font-size: 14px;
+    text-align: left;
+    color: #000000;
+    margin-top: -20px;
+    
+  }
+  
+.grid-container {
+    display: grid;
+    justify-content: flex-start;
+    grid-template-columns: 500px 10px 300px; /*Make the grid smaller than the container*/
+    grid-gap: 30px;
+    background-color: #282828;
+    padding: 100px;
+    padding-top: 70px;
+    margin-right: 200px;
+    margin-top: -160px;
+    height: 300px;
+  }
+  
+  .grid-container .form{
+    background-color: #A9A9A9;
+    border-radius: 5px;
+    text-align: center;
+    padding: 100px 20px;
+    padding-top: 0px;
+    font-size: 30px;
+    width: 400px;
+    height: 350px;
+    margin-left: 550px;
+    margin-right: 50px;
+    margin-top: -70px;
+    margin-bottom: 0px;
+
+  }
+  .flex-container > div {
+    background-color: #282828;
+    margin: 0px;
+    padding-top: 50px;
+    font-size: 10px;
+  }
+
+  i{
+      padding-top: 0px;
+      font-size: 15px;
+      color: #ffffff;
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 30px;
+    padding: 15px;
+    margin: 5px 0 -10px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+      width: 350px;
+    border: 1px solid #f1f1f1;
+
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  
+  /* Set a style for the submit/register button */
+  .registerbtn {
+    background-color: #45A29E;
+    color: #000000;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    color: #ffffff;
+    transition: 00.2s ease-in;
+    opacity:1;
+  }
+  
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+
+
+  .container{
+      margin-left: -75px;
+      margin-top: -30px;
+    width: 500px;
+    clear: both;
+  }
+
+  .container input {
+      margin-bottom: 10px;
+    width: 70%;
+    clear: both;
+  }
