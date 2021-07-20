@@ -1,1 +1,277 @@
 /* Your styles go here */
+
+html, body {
+    scroll-behavior: smooth;
+  margin: 0;
+  height:100%;
+  width:100%;
+  padding:0;
+}
+
+section {
+  display: block;
+  background: #282828;
+  height:100%;
+  width:100%;
+  padding: 60px;
+  padding-left: 120px;
+  box-sizing:border-box;
+}
+ /*Heading one styling*/ 
+  h1{
+    font-size:36px;
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    padding-top: 150px;
+  }
+/*Heading two styling*/
+  h2{
+    font-size:30px;
+  }
+/*Heading three styling*/
+  h3{
+    font-size:24px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #000000;
+  }
+/*Heading four styling*/
+  h4{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 30px;
+    margin-right: 40px;
+  }
+/*paragraph styling*/
+  p{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #ffffff;
+  }
+/*Heading five styling*/
+  h5{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #000000;
+    padding: 0px;
+        
+  }
+/*Heading six styling*/
+  h6{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #000000;
+    margin-top: -40px;
+  }
+/*skills heading styling*/
+  .myskills{
+    line-height: 15px;
+  }
+
+/*sidebar nav menu styling*/
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #282828;
+  overflow-x: hidden;
+  padding-top: 90px;
+}
+
+/* Style sidebar links */
+.sidebar a{
+  padding: 8px 8px 32px 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #C5C6C7;
+  display: block;
+}
+
+/*sidebar hover on mouse over*/
+.sidebar a:hover {
+  color: #4EE2EC;
+  transition: 000.2s ease-in;
+}
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  transition: 0.3s; /* Add transition on hover */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  }
+  
+/*sidebar links styling*/
+  #home {
+    top: 20px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    width: 160px;
+  }
+
+  #homeicon{
+    background-color: #ffffff;
+  }
+  
+  #about {
+    top: 80px;
+    background-color: #1F2833;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    width: 160px;
+  }
+  
+  #certifications {
+    top: 140px;
+    background-color: #C5C6C7;
+    display: flex;
+    align-items: stretch;
+    padding: 40px;
+    width: 160px;
+  }
+  
+  #contact {
+    top: 200px;
+    background-color: #45A29E;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    width: 160px;
+  }
+
+/* Style the main content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/*about grid styling*/
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 500px 10px 300px; /*Make the grid smaller than the container*/
+  grid-gap: 30px;
+  background-color: #45A29E;
+  padding: 100px;
+  padding-top: 100px;
+  margin-right: -60px;
+  margin-top: -140px;
+  height: 200px;
+}
+
+/*skills grid container styling*/
+.grid-container .skills{
+  background-color: #A9A9A9;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px 10px;
+  padding-top: 0px;
+  font-size: 30px;
+  width: 300px;
+  height: 400px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+/*experience grid container styling*/
+.grid-container .exp{
+  background-color: #A9A9A9;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px 20px;
+  padding-top: 0px;
+  font-size: 30px;
+  width: 300px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+/*ccent cert image*/
+.myccent{
+  width:250px; 
+  height:250px;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+
+/*ccna cert image*/
+.myccna{
+    width: 250px;
+    height: 250px;
+    margin-left: 130px;
+    margin-top: 40px;
+}
+
+/*page footer div container*/
+.footer-container{
+    margin-top: -24px;
+    background-color: #2C3539;
+}
+
+.footer{
+    height: 310px;
+    display: flex;
+
+}.sitemap{
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+}
+.sitemap a{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.sitemap a:hover{
+    color: #45A29E;
+    transition: 00.3s ease-out;
+}
+
+.logo .mylogo{
+    width:350px; 
+  height:250px;
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+.button {
+    background-color: #45A29E;
+    border: none;
+    border-radius: 5px;
+    color: #282828;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 190px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  .button:hover{
+      color: #ffffff;
+      transition: 00.2s ease-in;
+  }
